@@ -34,26 +34,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('welcome');
-});
-
-Route::get('/r-ex', function () {
-    return "Hello!!";
-});
-
-Route::get('/redirectex', function () {
-    return redirect("/test");
-});
-
-Route::get('/post/{id}/{age}', function ($id, $age) {
-    return "ID: " . $id . ", age: " . $age ;
-});
-
-Route::get('/post/{id}/{age?}', function ($id, $age = 15) {
-    return "ID: " . $id . ", age: " . $age;
-});
-
-Route::get('/post/{id}/{age?}', function ($id, $age=null) {
-    return "ID: " . $id . ", age: " . $age ;
-})-> where('age', '[\d]+');
