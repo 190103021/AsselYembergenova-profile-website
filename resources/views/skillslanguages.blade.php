@@ -51,24 +51,24 @@ h1{
     		<h1>Skills & Languages</h1>
     		<p id = "back">WHAT I BRING TO THE TABLE</p>
     		<ul>
-    			<li>Java <mark style = "background-color: white;">50%</mark></li>
+    			<li>Java <mark style = "background-color: white;">70%</mark></li>
     			<li>HTML & CSS <mark style = "background-color: white;">87%</mark></li>
-    			<li>DBMS <mark style = "background-color: white;">67%</mark></li>
+    			<li>DBMS <mark style = "background-color: white;">85%</mark></li>
     			<li>Kazakh <mark style = "background-color: white;">100%</mark></li>
     			<li>Russian <mark style = "background-color: white;">75%</mark></li>
-    			<li>English <mark style = "background-color: white;">57%</mark></li>
-    			<li>Turkish <mark style = "background-color: white;">50%</mark></li>
+    			<li>English <mark style = "background-color: white;">70%</mark></li>
+    			<li>Turkish <mark style = "background-color: white;">60%</mark></li>
     		</ul>    	
 </div>
 
 <div id = "sk">
-	<div id = "s"><div style = "width:200px; height: 5px; background-color:blue;"></div></div>
+	<div id = "s"><div style = "width:300px; height: 5px; background-color:blue;"></div></div>
 	<div id = "s"><div style = "width:350px; height: 5px; background-color:blue;"></div></div>
-	<div id = "s"><div style = "width:270px; height: 5px; background-color:blue;"></div></div>
+	<div id = "s"><div style = "width:345px; height: 5px; background-color:blue;"></div></div>
 	<div id = "s"><div style = "width:400px; height: 5px; background-color:blue;"></div></div>
 	<div id = "s"><div style = "width:300px; height: 5px; background-color:blue;"></div></div>
-	<div id = "s"><div style = "width:230px; height: 5px; background-color:blue;"></div></div>
-	<div id = "s"><div style = "width:200px; height: 5px; background-color:blue;"></div></div>
+	<div id = "s"><div style = "width:300px; height: 5px; background-color:blue;"></div></div>
+	<div id = "s"><div style = "width:260px; height: 5px; background-color:blue;"></div></div>
   
 </div>
 </body>
