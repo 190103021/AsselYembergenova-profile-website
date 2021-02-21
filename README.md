@@ -1,5 +1,6 @@
 Hello! My name is Assel. Currently, I am second year student. My CV:
 
+<img src = "C:/Users/User/Pictures/Screenshots/AboutMe" width="300" height="300">
 
 
 
