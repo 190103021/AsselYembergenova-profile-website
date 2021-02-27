@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +30,13 @@ Route::get('/skillslanguages', function () {
 Route::get('/contactme', function () {
     return view('contactme');
 })->name('contactme');
+
+Route::get('/post/create', function() {
+    DB::table('post')->insert([
+    	'title' => 'News',
+    	'body' => "All news around the world"
+    ]);
+});
 
 
 
