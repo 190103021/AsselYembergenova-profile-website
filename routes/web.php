@@ -32,7 +32,7 @@ Route::get('/contactme', function () {
 })->name('contactme');
 
 Route::get('/post/create', function() {
-    DB::table('post')->insert([
+    DB::table('posts')->insert([
     	'title' => 'News',
     	'body' => "All news around the world"
     ]);
