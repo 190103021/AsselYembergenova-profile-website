@@ -33,20 +33,13 @@ Route::get('/contactme', function () {
     return view('contactme');
 })->name('contactme');
 
-Route::get('/post/create', function() {
+Route::get('/post/add', function() {
     DB::table('posts')->insert([
-    	'title' => 'News',
-    	'body' => "All news around the world"
+        'title' => 'News',
+        'body' => "All news around the world"
     ]);
 });
 
-
-Route::get('/mid', "AsselController@index");
-Route::resource('/mid2', "AsselController");
-
-Route::get('/mid/{name}/{age?}/{id?}', function ($name, $age = 19, $id = 190102021) {
-    return $name . " " . $age . " " . $id;
-});
 
 Route::get('/', function () {
     return view('welcome');
@@ -54,3 +47,11 @@ Route::get('/', function () {
 
 
 Route::get('post', [BlogController::class, 'index']);
+
+
+Route::get('/post/create', function() {
+    return view('blog.create');
+});
+
+Route::post('/post/create', [BlogController::class, 'store'])-> name('add-post');
+
