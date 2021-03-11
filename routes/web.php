@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
 
+use App\Http\Controllers\BlogController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,14 +40,17 @@ Route::get('/post/create', function() {
     ]);
 });
 
-Route::get('/post', function(){
-	$post = Post::find(1);
-	return $post;
+
+Route::get('/mid', "AsselController@index");
+Route::resource('/mid2', "AsselController");
+
+Route::get('/mid/{name}/{age?}/{id?}', function ($name, $age = 19, $id = 190102021) {
+    return $name . " " . $age . " " . $id;
 });
-
-
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('post', [BlogController::class, 'index']);
