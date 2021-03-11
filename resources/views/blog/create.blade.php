@@ -59,8 +59,8 @@
    
 	<form method = "POST" action = "{{ route('add-post')}}">
 		@csrf
-		<input type="text" name="title" placeholder="Title" id = "t"><br>
-		<input type="text" name="body" placeholder="Body" id = "b"><br>
+		<input type="text" name="title" placeholder="Enter title of the post..." id = "t"><br>
+		<input type="text" name="body" placeholder="Content of the post..." id = "b"><br>
 		<button type = "submit">Create</button>
 	</form>
    </div>
