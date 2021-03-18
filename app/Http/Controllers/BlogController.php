@@ -27,7 +27,7 @@ class BlogController extends Controller
       $post = Post::find($id);
 
       if($post == null)
-        return response( 'Post not found', 404);
+        return response('Post not found', 404);
       return view('blog.detail')->with(['post' => $post]);
 
     }
