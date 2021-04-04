@@ -4,9 +4,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
+use App\Models\Utilizer;
 
 use App\Http\Controllers\BlogController;
-
+use App\Http\Controllers\UtilizerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,6 +55,12 @@ Route::get('/post/create', function() {
 });
 
 Route::post('/post/create', [BlogController::class, 'store'])-> name('add-post');
-
 Route::get('post/{id}', [BlogController::class, 'get_post']);
+
+
+Route::get('/utilizers', [UtilizerController::class, 'index']);
+Route::post('/utilizers/create', [UtilizerController::class, 'store'])-> name('add-image');
+Route::get('/utilizers/create', function() {
+    return view('utilizers');
+});
 
