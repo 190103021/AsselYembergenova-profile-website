@@ -22,4 +22,12 @@ class UtilizerController extends Controller
 
     	return back();
     }
+
+    public function getAllUtilizers(){
+      $utilizers = Utilizer::all();
+
+       return view('allUtilizers')->with(['utilizers' => $utilizers]);
+
+
+    }
 }

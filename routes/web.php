@@ -63,4 +63,4 @@ Route::post('/utilizers/create', [UtilizerController::class, 'store'])-> name('a
 Route::get('/utilizers/create', function() {
     return view('utilizers');
 });
-
+Route::get('utilizers/all', [UtilizerController::class, 'getAllUtilizers']);
