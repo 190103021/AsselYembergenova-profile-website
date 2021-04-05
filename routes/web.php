@@ -8,6 +8,7 @@ use App\Models\Utilizer;
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UtilizerController;
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,3 +65,5 @@ Route::get('/utilizers/create', function() {
     return view('utilizers');
 });
 Route::get('utilizers/all', [UtilizerController::class, 'getAllUtilizers']);
+
+Route::get('mail/send', [MailController::class, 'send']);
