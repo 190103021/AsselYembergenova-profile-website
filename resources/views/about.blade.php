@@ -49,10 +49,9 @@
 <body>
 	<div id = "about">
     	<div id = "me">
-    		<h1>About me</h1>
-    		<p id = "back">Who I am?</p>
-    		<h3>Hello! I am Yembergenova Assel. Currently, I am second year student at Suleyman Demirel University. I like programming and math. 
-    		There are five of us in the famaly: father, mother and two brothers.</h3>
+    		<h1>{{__('About me')}}</h1>
+    		<p id = "back">{{__('Who I am?')}}</p>
+    		<h3>{{__('Hello! I am Yembergenova Assel. Currently, I am second year student at Suleyman Demirel University. I like programming and math. There are five of us in the famaly: father, mother and two brothers.')}}</h3>
     	</div>
     </div>
 </body>

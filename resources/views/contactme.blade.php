@@ -56,7 +56,7 @@ h1{
 
 </head>
 <body>
-	<h1>Contact me</h1>
+	<h1>{{__('Contact me')}}</h1>
 	<div id = "gen">
 	<div id = "input">
    	<img src = "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?ixid=MXwxMjA3fDF8MHxzZWFyY2h8MXx8b2ZmaWNlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" width = "500" height = "450">

@@ -66,7 +66,13 @@
 	    list-style-type: none;
 	    line-height: 50px;
 	    font-size: 25px;
-        display:inline
+        display:inline;
+        }
+        #w{
+        	color:white;
+        	font-size: 20px;
+        	max-width:250px;
+        	margin-left: 30px;
         }
         
 	</style>
@@ -78,9 +84,9 @@
 
 		<div class="container">
         <ul>
-           <li><a id = "a1" href="{{route('about')}}" >About</a></li>
-          <li><a id = "s1" href="{{route('skillslanguages')}}">Skills & Languages</a></li>
-          <li><a id = "c1" href="{{route('contactme')}}">Contact</a></li>
+           <li><a id = "a1" href="{{route('about')}}" >{{__('About me')}}</a></li>
+          <li><a id = "s1" href="{{route('skillslanguages')}}">{{__('Skills & Languages')}}</a></li>
+          <li><a id = "c1" href="{{route('contactme')}}">{{__('Contact me')}}</a></li>
      </ul>
  </div> 
 
@@ -89,16 +95,10 @@
     
     <div class = "div">
     	 <img class="cit" src="https://i.pinimg.com/564x/c0/02/2c/c0022ca8f8052a3e881957eff2bf8512.jpg" alt=" ">
-    	 <h1 class="text">Yembergenova Assel</h1>
-    	 <pre>      
-
-                 Faculty of Engeneering 
-                  and Natural Science. 
-                  Information System.    
-
-           
-
-                   </pre>
+    	 <h1 class="text">{{__('Yembergenova Assel')}}</h1>
+    	 <div id = "w">
+    	 <p>{{__('Faculty of Engeneering and Natural Science. Information System.')}}</p>
+    	</div>
     </div>
    </div>
 	

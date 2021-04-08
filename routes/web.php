@@ -35,6 +35,8 @@ Route::get('/contactme', function () {
     return view('contactme');
 })->name('contactme');
 
+
+
 Route::get('/post/add', function() {
     DB::table('posts')->insert([
         'title' => 'News',
@@ -67,3 +69,24 @@ Route::get('/utilizers/create', function() {
 Route::get('utilizers/all', [UtilizerController::class, 'getAllUtilizers']);
 
 Route::get('mail/send', [MailController::class, 'send']);
+
+
+
+Route::get('/about/{lang}', function($lang){
+    App::setlocale($lang);
+    return view('about');
+});
+Route::get('/skillslanguages/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('skillslanguages');
+});
+
+Route::get('/contactme/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('contactme');
+});
+
+Route::get('/homepage/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('homepage');
+});

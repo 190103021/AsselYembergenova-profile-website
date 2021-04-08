@@ -41,6 +41,7 @@ h1{
 	margin-top: 10px;
 	margin-left: -70px;
 	font-size: 40px;
+	min-width: 5s00px;
 }
 
 	</style>
@@ -48,16 +49,16 @@ h1{
 <body>
 	<div id = "skills">
     
-    		<h1>Skills & Languages</h1>
-    		<p id = "back">WHAT I BRING TO THE TABLE</p>
+    		<h1>{{__('Skills & Languages')}}</h1>
+    		<p id = "back">{{__('MY KNOWLEDGE')}}</p>
     		<ul>
     			<li>Java <mark style = "background-color: white;">70%</mark></li>
     			<li>HTML & CSS <mark style = "background-color: white;">87%</mark></li>
     			<li>DBMS <mark style = "background-color: white;">85%</mark></li>
-    			<li>Kazakh <mark style = "background-color: white;">100%</mark></li>
-    			<li>Russian <mark style = "background-color: white;">75%</mark></li>
-    			<li>English <mark style = "background-color: white;">70%</mark></li>
-    			<li>Turkish <mark style = "background-color: white;">60%</mark></li>
+    			<li>{{__('Kazakh')}}<mark style = "background-color: white;">100%</mark></li>
+    			<li>{{__('Russian')}}<mark style = "background-color: white;">75%</mark></li>
+    			<li>{{__('English')}}<mark style = "background-color: white;">70%</mark></li>
+    			<li>{{__('Turkish')}}<mark style = "background-color: white;">60%</mark></li>
     		</ul>    	
 </div>
 
