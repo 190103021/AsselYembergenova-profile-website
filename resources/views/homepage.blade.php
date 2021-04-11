@@ -44,7 +44,8 @@
 			margin-top: -10px;
 		}
         .container{
-			padding-top:5px;
+        	margin-top:-15px;
+			padding-top:10px;
 			padding-left:50px;
 			margin-left: 70px;
 			text-align: left; 
@@ -80,13 +81,15 @@
 	
 </head>
 <body>
+	@extends('layout')
+	@section('content')
 	<div id = "bg">
 
 		<div class="container">
         <ul>
-           <li><a id = "a1" href="{{route('about')}}" >{{__('About me')}}</a></li>
-          <li><a id = "s1" href="{{route('skillslanguages')}}">{{__('Skills & Languages')}}</a></li>
-          <li><a id = "c1" href="{{route('contactme')}}">{{__('Contact me')}}</a></li>
+           <li><a id = "a1" href="{{route('about')}}" style="color:white;">{{__('About me')}}</a></li>
+          <li><a id = "s1" href="{{route('skillslanguages')}}" style="color:white;">{{__('Skills & Languages')}}</a></li>
+          <li><a id = "c1" href="{{route('contactme')}}" style="color:white;">{{__('Contact me')}}</a></li>
      </ul>
  </div> 
 
@@ -101,6 +104,6 @@
     	</div>
     </div>
    </div>
-	
+	@endsection
 </body>
 </html>

@@ -9,6 +9,7 @@ use App\Models\Utilizer;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UtilizerController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\LocalizationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -90,3 +91,4 @@ Route::get('/homepage/{lang}', function ($lang) {
     App::setlocale($lang);
     return view('homepage');
 });
+Route::get('/{lang}', [LocalizationController::class, 'index']);
